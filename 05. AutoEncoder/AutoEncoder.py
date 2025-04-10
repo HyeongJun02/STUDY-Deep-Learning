@@ -46,11 +46,11 @@ class AutoEncoder:
         mse = tf.keras.losses.mse
         self.en_decoder.compile(optimizer=optimizer_alg, loss=mse)
 
-        def fit(self, x, y, batch_size, epochs):
-            self.en_decoder.fit(x=x, y=y, batch_size=batch_size, epochs=epochs)
+    def fit(self, x, y, batch_size, epochs):
+        self.en_decoder.fit(x=x, y=y, batch_size=batch_size, epochs=epochs)
 
-        def save_weights(self, save_path):
-            self.en_decoder.save_weights(save_path)
-            
-        def load_weights(self, load_path):
-            self.en_decoder.load_weights(load_path)
+    def save_weights(self, save_path):
+        self.en_decoder.save_weights(save_path)
+        
+    def load_weights(self, load_path):
+        self.en_decoder.load_weights(load_path)
