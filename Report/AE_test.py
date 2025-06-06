@@ -1,3 +1,5 @@
+# ../model/ae_model.weights.h5에 모델 저장됩니다.
+
 import os
 import tensorflow as tf
 import numpy as np
